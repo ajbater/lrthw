@@ -11,6 +11,7 @@ puts "Here's your file #{filename}:"
 # Calls the 'read' method on the file stored in the 'txt' variable.
 # Prints the contents to the screen.
 print txt.read
+txt.close
 
 # Asks for user input, in this case it asks for the name of the file again.
 print "Type the filename again: "
@@ -23,3 +24,4 @@ txt_again = open(file_again)
 
 # Calls the 'read' method on the txt_again variable and prints the results to the screen.
 print txt_again.read
+txt_again.close
