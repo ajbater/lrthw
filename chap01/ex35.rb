@@ -4,7 +4,7 @@ def gold_room
   print "> "
   choice = $stdin.gets.chomp
 
-  if choice.to_i.is_a? Numeric
+  if choice =~ /\A[-+]?[0-9]*\.?[0-9]+\Z/
     how_much = choice.to_i
   else
     dead("Man, learn to type a number.")
