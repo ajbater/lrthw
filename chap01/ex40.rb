@@ -1,0 +1,57 @@
+#require "./mystuff.rb"
+
+#MyStuff.apple()
+#puts MyStuff::TANGERINE
+
+#class MyStuff
+
+#  def initialize()
+#    @tangerine = "And now a thousand years between"
+#  end
+
+#  attr_reader :tangerine
+
+#  def apple()
+#    puts "I AM CLASSY APPLES!"
+#  end
+
+#end
+
+#thing = MyStuff.new()
+#thing.apple()
+#puts thing.tangerine
+
+class Song
+
+  def initialize(lyrics)
+    @lyrics = lyrics
+  end
+
+  def sing_me_a_song()
+    @lyrics.each { |line| puts line }
+  end
+end
+
+happy_bday = Song.new(["Happy birthday to you",
+  "I don't want to get sued",
+  "So I'll stop right there"])
+
+bulls_on_parade = Song.new(["They rally around tha family",
+  "With pockets full of shells"])
+
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+
+merry_xmas = Song.new(["We wish you a Merry Christmas",
+  "We wish you a Merry Christmas",
+  "We wish you a Merry Christmas",
+  "And a happy New Year!"])
+
+  merry_xmas.sing_me_a_song()
+
+  jingle_bells_lyrics = ["Jingle bells, jingle bells", "Jingle all the way", "Oh what fun it is to ride in a one horse open sleigh"]
+
+  jingle_bells = Song.new(jingle_bells_lyrics)
+
+  jingle_bells.sing_me_a_song()
